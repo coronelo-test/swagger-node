@@ -1,3 +1,5 @@
+[![Swagger-Node CI](https://github.com/coronelo-test/swagger-node/actions/workflows/test_and_build.yml/badge.svg)](https://github.com/coronelo-test/swagger-node/actions/workflows/test_and_build.yml)
+
 ### Información
 
 Sitio creado con Node y express para probar la integración con swagger.
