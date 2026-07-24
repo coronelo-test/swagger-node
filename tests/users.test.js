@@ -6,7 +6,7 @@ describe("GET /api/v1/users", () => {
     const response = await request(app).get("/api/v1/users");
 
     expect(response.statusCode).toBe(200);
-    /*const toCompare = [
+    const toCompare = [
       {
         id: 1,
         name: "Alice",
@@ -14,12 +14,6 @@ describe("GET /api/v1/users", () => {
       {
         id: 2,
         name: "Bob",
-      },
-    ];*/
-    const toCompare = [
-      {
-        id: 1,
-        name: "Alice",
       },
     ];
     expect(response.body).toEqual(toCompare);
