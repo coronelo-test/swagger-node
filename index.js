@@ -25,9 +25,9 @@ const userRoutes = require("./routes/userRoutes");
 // Mount the user routes onto the /api prefix
 app.use("/api/v1/", userRoutes);
 
+// Tengo que exportar app para poder usar los tests.
+module.exports = app;
+
 app.listen(PORT, function () {
   console.log("Iniciando app en puerto " + PORT);
 });
-
-// Tengo que exportar app para poder usar los tests.
-module.exports = app;
