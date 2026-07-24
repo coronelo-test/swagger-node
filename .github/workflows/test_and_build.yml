@@ -11,7 +11,7 @@ on:
 
 concurrency:
   group: ci-#{{github.ref}}
-  cancel-in-progress: true	// solo se ejecuta una
+  cancel-in-progress: true # solo se ejecuta una
 
 jobs:
   build:
