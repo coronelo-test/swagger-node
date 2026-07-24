@@ -19,7 +19,7 @@ jobs:
 
     env:
       project_version: 1.0
-
+      app_name: swagger-node
     strategy:
       matrix:
         #        node-version: [18.x, 20.x, 22.x]
@@ -47,4 +47,4 @@ jobs:
         uses: docker/build-push-action@v7
         with:
           push: true
-          tags: ghcr.io/coronelo-test/github-actions-tutorial:${{ env.project_version }}
+          tags: ghcr.io/coronelo-test/${{env.app_name}}:${{ env.project_version }}
